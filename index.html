@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Still Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#0b0b10" />
+</head>
+
+<body>
+  <div class="bg"></div>
+  <div class="grain"></div>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="badge">For You</div>
+      <h1 class="title">
+        Before the noise…<br />
+        there was <span class="soft">us</span>.
+      </h1>
+      <p class="subtitle">
+        I don’t want to fight and argue all the time.<br />
+        I just want to come back to love.
+      </p>
+
+      <button class="btn" id="startBtn" type="button">
+        Tap to Remember
+      </button>
+
+      <p class="hint">Scroll when you’re ready</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- SECTION: MEMORY 1 -->
+    <section class="card reveal">
+      <div class="card-media">
+        <img src="photos/1.jpg" alt="Memory photo 1" />
+      </div>
+      <div class="card-text">
+        <h2>When it was easy to love</h2>
+        <p>
+          We used to be so in love. You used to care about me in the smallest ways.
+          I still remember how safe I felt with you.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION: MEMORY 2 -->
+    <section class="card reveal">
+      <div class="card-media">
+        <img src="photos/2.jpg" alt="Memory photo 2" />
+      </div>
+      <div class="card-text">
+        <h2>When you never gave up</h2>
+        <p>
+          Even if a thousand times you had to come to me and say sorry,
+          you would do it — because you cared.
+          I miss that softness between us.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION: MEMORY 3 -->
+    <section class="card reveal">
+      <div class="card-media">
+        <img src="photos/3.jpg" alt="Memory photo 3" />
+      </div>
+      <div class="card-text">
+        <h2>When we chose each other</h2>
+        <p>
+          We were not perfect, but we were together.
+          I still believe we can come back to that love — slowly, gently.
+        </p>
+      </div>
+    </section>
+
+    <!-- VOICE NOTE -->
+    <section class="voice reveal" id="voice">
+      <div class="voice-inner">
+        <h2>My voice, for you</h2>
+        <p class="voice-sub">
+          Tap play. I recorded this because text is not enough.
+        </p>
+
+        <div class="player">
+          <button class="btn ghost" id="playBtn" type="button">Play</button>
+          <div class="bar">
+            <div class="barFill" id="barFill"></div>
+          </div>
+          <div class="time" id="timeLabel">0:00</div>
+        </div>
+
+        <audio id="audio" preload="metadata">
+          <source src="audio.mp3" type="audio/mpeg" />
+        </audio>
+
+        <p class="note">
+          I love you. I miss us. I want peace, not distance.
+        </p>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="final reveal">
+      <h2>Can we choose each other again?</h2>
+      <p>
+        I’m not asking for perfection.<br />
+        I’m just asking for love — the way we used to.
+      </p>
+
+      <button class="btn" id="messageBtn" type="button">
+        If you feel it too…
+      </button>
+
+      <div class="hiddenMsg" id="hiddenMsg">
+        <p>
+          I’m here. I’m trying. I still choose you.
+          Let’s talk softly — today.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a class="toplink" href="#top">Back to top</a>
+      <div class="small">Made with love.</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
